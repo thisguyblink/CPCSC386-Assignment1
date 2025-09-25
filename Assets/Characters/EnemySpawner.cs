@@ -31,8 +31,8 @@ public class EnemySpawner : MonoBehaviour
 
     private void SetSpawnTime()
     {
-        float multiplier = ScoreManager.Instance.score / 10;
-        if (multiplier == 1.0 || multiplier == 2.0 || multiplier == 3.0 || multiplier == 4.0)
+        int num = ScoreManager.Instance.score;
+        if (num == 10 || num == 20 || num == 30 || num == 40)
         {
             _maximumSpawnTime /= 2;
             ScoreManager.Instance.Multiplier();

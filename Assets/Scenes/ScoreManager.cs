@@ -27,7 +27,7 @@ public class ScoreManager : MonoBehaviour
     public void AddScore()
     {
         scoreText = GameObject.Find("ScoreText")?.GetComponent<TMP_Text>();
-        score += multiplier * 1;
+        score += multiplier;
         scoreText.text = "Score: " + score;
 
     }

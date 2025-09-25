@@ -31,12 +31,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void SetSpawnTime()
     {
-        int num = ScoreManager.Instance.score;
-        if (num == 10 || num == 20 || num == 30 || num == 40)
-        {
-            _maximumSpawnTime /= 2;
-            ScoreManager.Instance.Multiplier();
-        }
         _timeUntilSpawn = Random.Range(_minimumSpawnTime, _maximumSpawnTime);
         int index = Random.Range(0, spawnPoints.Length);
         chosenSpawn = spawnPoints[index];

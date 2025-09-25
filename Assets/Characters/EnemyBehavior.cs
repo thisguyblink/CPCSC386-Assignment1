@@ -40,7 +40,7 @@ public class EnemyBehavior : MonoBehaviour
         else if (collision.CompareTag("Player"))
         {
             Debug.Log("Enemy touched player!");
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("Main-Menu");
         }
     }
 }

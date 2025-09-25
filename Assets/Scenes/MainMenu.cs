@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         // Replace "GameScene" with your gameplay scene name
+        Debug.Log("Play Game Button Pressed");
         ScoreManager.Instance.ResetScore();
         SceneManager.LoadScene("Level-1");
     }

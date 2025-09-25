@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 public class RayBehavior : MonoBehaviour
 {
     [HideInInspector] public PlayerMovement2D playerMovement; // assigned on spawn
-    private float raySpeed = 40f;
+    private float raySpeed = 50f;
 
     private Vector3 moveDirection;
 

@@ -33,6 +33,7 @@ public class PlayerMovement2D : MonoBehaviour
         {
             sr.sprite = idleSprite;
         }
+        ScoreManager.Instance.AddScore();
     }
 
     public void OnMove(InputValue value)
